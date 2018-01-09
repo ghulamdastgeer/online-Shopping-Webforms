@@ -1,0 +1,262 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="online_shopping.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile_Store</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+      <style type="text/css">
+          .auto-style1 {
+              color: #888888;
+          }
+      </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div class="header-area">
+        <button type="button" class="close-menu" style="display:none;">X</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
+                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">INR</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="search-bar search-bar-2 search-bar-top" style="display:none;">
+                            <input type="text" name="search" class="search-input" placeholder="Search here">
+                            <button type="button" class="search-btn"><img src="img/search.png" alt="" width="18px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo">
+                        <h1><a href="index.html"><img src="img/logo2.png"></a></h1>
+                    </div>
+                </div>
+                
+                <div class="col-xs-8">
+                    <div class="search-bar search-bar-2">
+                        <input type="text" name="search" class="search-input" placeholder="Search here">
+                        <button type="button" class="search-btn"><img src="img/search.png" alt="" width="18px;"></button>
+                    </div>
+                    <div class="shopping-item">
+                        <a href="cart.html">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End site branding area -->
+    
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header clearfix">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="menu-heading pull-left" style="display:none">MENU <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div> 
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="computers.html">Computer &amp; Gaming</a></li>
+                        <li class="active"><a href="electronics.html">Electronics</a></li>
+                        <li><a href="cart.html">My cart</a></li>
+                        <li><a href="all-products.html">All products</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li class="pull-right">
+                            <div class="search-bar">
+                                <input type="text" name="search" class="search-input" placeholder="Search here">
+                                <button type="button" class="search-btn"><img src="img/search.png" alt="" width="18px;"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+    
+     <asp:ContentPlaceHolder ID="body1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <a href="#" class="ft-logo"><img src="img/logo2-ft.png" alt="" width="150"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi omnis Laborum commodi veritatis magni at?</p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">User Navigation </h2>
+                        <ul>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Order history</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">My cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Categories</h2>
+                        <ul>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Mobile accesseries</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Headphone</a></li>
+                            <li><a href="#">Gadets</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Newsletter</h2>
+                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Type your email">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer top area -->
+    
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7">
+                    <div class="copyright">
+                        <p>&copy; 2016 mobilestore. All Rights Reserved.</p>
+                    </div>
+                </div>
+                
+                <div class="col-xs-5">
+                    <div class="footer-card-icon">
+                        <i class="fa fa-cc-discover"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                        <i class="fa fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="premium-tagline">
+        <p>Created By: <a href="https://www.premium-themes.co/" target="_blank">Premium Themes</a></p>
+    </div>
+      <!-- End footer bottom area -->
+    <!--==========================================-->
+    <!-- JAVASCRIPT -->
+    <!--==========================================-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery-ui.js"></script>
+    <!-- jquery library js -->
+    <script type="text/javascript" src="js/plugins/modernizr.js"></script>
+    <!--modernizr Js-->
+    <script type="text/javascript" src="plugins/rev_slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="plugins/rev_slider/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="plugins/rev_slider/js/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="plugins/rev_slider/js/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="plugins/rev_slider/js/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="plugins/rev_slider/js/revolution.extension.layeranimation.min.js"></script>
+    <!--Slider Revolution Js File-->
+    <script type="text/javascript" src="js/plugins/tether.min.js"></script>
+    <!--Bootstrap tooltips require Tether (Tether Js)-->
+    <script type="text/javascript" src="js/plugins/bootstrap.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/plugins/owl.carousel.js"></script>
+    <!-- OWL carousel js -->
+    <script type="text/javascript" src="js/plugins/slick.js"></script>
+    <!-- Slick Slider js -->
+    <script type="text/javascript" src="js/plugins/plugins-all.js"></script>
+    <!-- Plugins All js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- custom js -->
+    <!-- end jquery -->
+
+   
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
