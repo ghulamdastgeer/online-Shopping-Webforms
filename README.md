@@ -1,1 +1,1 @@
-# .net-semester-projecy
+# Online shopping store in Asp.net Webforms
